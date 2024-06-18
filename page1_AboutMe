@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Mathewson's Personal Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: -100%;
+            display: flex;
+            align-items: center;
+            animation: slideIn 1s forwards;
+            z-index: 1000;
+        }
+
+        @keyframes slideIn {
+            to {
+                left: 0;
+            }
+        }
+
+        header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 200px;
+            background-color: black;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: blue;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .content section {
+            margin-bottom: 40px;
+        }
+
+        .content h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            background-color: #ffeb3b;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/40" alt="Logo">
+        <h1>Steve Mathewson</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Steve Mathewson. I am a 33-year-old sales engineer living in Colorado. I enjoy hiking in my free time and exploring the beautiful landscapes that Colorado has to offer.</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Here you can showcase your work. Add your projects, achievements, or any other professional highlights.</p>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Welcome to my blog! Here, I share my thoughts, experiences, and stories from my hikes and professional life.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Email: steve.mathewson@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
